@@ -1,4 +1,4 @@
-   var bio = {  
+   	var bio = {  
 	    'name': "Ewa Małusecka",
 	    'role': "Front-End  Developer",
 	    'contacts': {
@@ -10,6 +10,7 @@
 	    'welcomeMessege': "Hi, here's my page with some of my projects and few things about me.",
 	    'skills': ["JS", "HTML5", 'CSS3', 'JQUERY', "AJAX"],
 	    'biopic': "images/cvv.png"
+	};
 
 
 	var education = {
