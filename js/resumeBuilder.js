@@ -1,4 +1,4 @@
-   	var bio = {  
+   var bio = {
 	    'name': "Ewa Małusecka",
 	    'role': "Front-End  Developer",
 	    'contacts': {
@@ -10,16 +10,17 @@
 	    'welcomeMessege': "Hi, here's my page with some of my projects and few things about me.",
 	    'skills': ["JS", "HTML5", 'CSS3', 'JQUERY', "AJAX"],
 	    'biopic': "images/cvv.png"
-	};
+};
+
 
 
 	var education = {
 	    "schools": [{
 	        'name': "AGH University of Science and Technology",
-	        'datesAttended': "2014-2016",
+	        'dates': "2014-2016",
 	        'degree': "BA",
 	        'location': "Cracow",
-	        'major': ["Acustic Engineering", "English"],
+	        'majors': ["Acustic Engineering", "English"],
 	        'url': "http://www.agh.edu.pl/en"
 	    }],
 	    "onlineCourses": [{
@@ -60,13 +61,13 @@
 	            "title": "Random Quote Machine",
 	            "dates": "December 2016",
 	            "description": "Project done for FreeCodeCamp. Page showing random quotes using other pages' API",
-	            "image": ["images/randomQuote.png"]
+	            "images": ["images/randomQuote.png"]
 	        },
 	        {
 	            "title": "Wikipedia Viewer",
 	            "dates": "January 2017",
 	            "description": "Project done for FreeCodeCamp. Page showing Wikipedia search results using Wikipedia API",
-	            "image": ["images/wikiViewer.png"]
+	            "images": ["images/wikiViewer.png"]
 	        }
 	    ]
 	};
@@ -81,6 +82,7 @@
 	    var formattedLocation = HTMLlocation.replace("%data%", bio.contacts.location);
 	    var formattedBioPic = HTMLbioPic.replace("%data%", bio.biopic);
 	    var formattedWelcomeMsg = HTMLwelcomeMsg.replace("%data%", bio.welcomeMessege);
+	    var formattedMobile = HTMLmobile.replace("%data%", bio.contacts.mobile);
 
 
 	    $("#header").prepend(formattedRole);
@@ -91,6 +93,8 @@
 	    $("#topContacts,#footerContacts").append(formattedEmail);
 	    $("#topContacts,#footerContacts").append(formattedGithub);
 	    $("#topContacts,#footerContacts").append(formattedLocation);
+	    $("#topContacts,#footerContacts").append(formattedMobile);
+
 
 
 
@@ -102,7 +106,6 @@
 	        });
 	    }
 	};
-	bio.display();
 
 
 	education.display = function() {
@@ -142,8 +145,7 @@
 	        $(".education-entry:last").append(formattedOnlineURL);
 	    });
 	};
-	education.display();
-
+	
 
 
 	projects.display = function() {
@@ -155,15 +157,18 @@
 	        var formattedProjectTitle = HTMLprojectTitle.replace("%data%", project.title);
 	        var formattedProjectDates = HTMLprojectDates.replace("%data%", project.dates);
 	        var formattedProjectDescription = HTMLprojectDescription.replace("%data%", project.description);
-	        var formattedProjectImage = HTMLprojectImage.replace("%data%", project.image);
+
+	        project.images.forEach(function(image){
+	        	var formattedProjectImage = HTMLprojectImage.replace("%data%",image);
+	        	$(".project-entry:last").append(formattedProjectImage);
+	        });
 
 	        $(".project-entry:last").append(formattedProjectTitle);
 	        $(".project-entry:last").append(formattedProjectDates);
 	        $(".project-entry:last").append(formattedProjectDescription);
-	        $(".project-entry:last").append(formattedProjectImage);
 	    });
 	};
-	projects.display();
+	
 
 
 	work.display = function displayWork() {
@@ -184,7 +189,6 @@
 	        $(".work-entry:last").append(formattedWorkDescription);
 	    });
 	};
-	work.display();
 
 
 	$(document).click(function(loc) {
@@ -204,3 +208,9 @@
 
 
 	$("#mapDiv").append(googleMap);
+
+
+bio.display();
+work.display();
+projects.display();
+education.display();
