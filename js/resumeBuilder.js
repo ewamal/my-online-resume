@@ -115,9 +115,9 @@
 
 	        var formattedSchoolName = HTMLschoolName.replace("%data%", school.name).replace("#", school.url);
 	        var formattedSchoolDegree = HTMLschoolDegree.replace("%data%", school.degree);
-	        var formattedSchoolDates = HTMLschoolDates.replace("%data%", school.datesAttended);
+	        var formattedSchoolDates = HTMLschoolDates.replace("%data%", school.dates);
 	        var formattedSchoolLocation = HTMLschoolLocation.replace("%data%", school.location);
-	        var formattedSchoolMajor = HTMLschoolMajor.replace("%data%", school.major);
+	        var formattedSchoolMajor = HTMLschoolMajor.replace("%data%", school.majors);
 
 	        var formattedSchoolNameAndDegree = formattedSchoolName + formattedSchoolDegree;
 
