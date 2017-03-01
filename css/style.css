@@ -227,3 +227,7 @@ span {
     height: 250px;
     width: auto;
 }
+
+.projectImg:hover {
+  border: solid;
+}
