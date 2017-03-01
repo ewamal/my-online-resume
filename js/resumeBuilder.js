@@ -2,7 +2,7 @@
 	    'name': "Ewa Małusecka",
 	    'role': "Front-End  Developer",
 	    'contacts': {
-	        'mobile': "513285825",
+	        'mobile': "+48 510 982 367",
 	        'email': "maluseckae@gmail.com",
 	        'github': "ewamal",
 	        'location': "Cracow",
@@ -20,7 +20,7 @@
 	        'dates': "2014-2016",
 	        'degree': "BA",
 	        'location': "Cracow",
-	        'majors': ["Acustic Engineering", "English"],
+	        'majors': ["Acustic Engineering"],
 	        'url': "http://www.agh.edu.pl/en"
 	    }],
 	    "onlineCourses": [{
@@ -39,19 +39,13 @@
 	};
 
 	var work = {
-	    "jobs": [{
-	            "employer": "Codewise",
-	            "title": "Web Dev Intern",
-	            "dates": "2015-2016",
-	            "location": "Warsaw",
-	            "description": "Creating web pages with HTML, CSS and JS"
-	        },
+	    "jobs": [
 	        {
-	            "employer": "Deloitte",
-	            "title": "Front-End Dev Trainee",
-	            "dates": "2016-2017",
+	            "employer": "",
+	            "title": "",
+	            "dates": "",
 	            "location": "Cracow",
-	            "description": "Creating web pages with HTML, CSS and JS"
+	            "description": ""
 	        }
 	    ]
 	};
@@ -61,13 +55,15 @@
 	            "title": "Random Quote Machine",
 	            "dates": "December 2016",
 	            "description": "Project done for FreeCodeCamp. Page showing random quotes using other pages' API",
-	            "images": ["images/randomQuote.png"]
+	            "images": ["images/randomQuote.png"],
+	            "url" : "https://ewamal.github.io/random-quote-machine/"
 	        },
 	        {
 	            "title": "Wikipedia Viewer",
 	            "dates": "January 2017",
 	            "description": "Project done for FreeCodeCamp. Page showing Wikipedia search results using Wikipedia API",
-	            "images": ["images/wikiViewer.png"]
+	            "images": ["images/wikiViewer.png"],
+	            "url" : "https://ewamal.github.io/wiki-viewer/"
 	        }
 	    ]
 	};
@@ -157,15 +153,13 @@
 	        var formattedProjectTitle = HTMLprojectTitle.replace("%data%", project.title);
 	        var formattedProjectDates = HTMLprojectDates.replace("%data%", project.dates);
 	        var formattedProjectDescription = HTMLprojectDescription.replace("%data%", project.description);
-
-	        project.images.forEach(function(image){
-	        	var formattedProjectImage = HTMLprojectImage.replace("%data%",image);
-	        	$(".project-entry:last").append(formattedProjectImage);
-	        });
-
+	        var formattedProjectImage = HTMLprojectImage.replace("%data%", project.images).replace("#", project.url);
+	        
+			
 	        $(".project-entry:last").append(formattedProjectTitle);
 	        $(".project-entry:last").append(formattedProjectDates);
 	        $(".project-entry:last").append(formattedProjectDescription);
+	        $(".project-entry:last").append(formattedProjectImage);
 	    });
 	};
 	
@@ -189,12 +183,11 @@
 	        $(".work-entry:last").append(formattedWorkDescription);
 	    });
 	};
-
+    
 
 	$("#mapDiv").append(googleMap);
 
-
-bio.display();
-work.display();
-projects.display();
-education.display();
+	bio.display();
+	work.display();
+	projects.display();
+	education.display();
