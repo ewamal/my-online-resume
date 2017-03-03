@@ -64,7 +64,14 @@
 	            "description": "Project done for FreeCodeCamp. Page showing Wikipedia search results using Wikipedia API",
 	            "images": ["images/wikiViewer.png"],
 	            "url" : "https://ewamal.github.io/wiki-viewer/"
-	        }
+	        },
+		{
+	            "title": "Weather App",
+	            "dates": "November 2016",
+	            "description": "Project done for FreeCodeCamp. Site showing current weather using openweathermap.org API. ",
+	            "images": ["images/weather.png"],
+	            "url" : "https://ewamal.github.io/weather/"
+	        } 
 	    ]
 	};
 
