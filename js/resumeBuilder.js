@@ -56,21 +56,21 @@
 	            "dates": "December 2016",
 	            "description": "Project done for FreeCodeCamp. Page showing random quotes using other pages' API",
 	            "images": ["images/randomQuote.png"],
-	            "url" : "https://ewamal.github.io/random-quote-machine/"
+	            "url" : "https://github.com/ewamal/random-quote-machine"
 	        },
 	        {
 	            "title": "Wikipedia Viewer",
 	            "dates": "January 2017",
 	            "description": "Project done for FreeCodeCamp. Page showing Wikipedia search results using Wikipedia API",
 	            "images": ["images/wikiViewer.png"],
-	            "url" : "https://ewamal.github.io/wiki-viewer/"
+	            "url" : "https://github.com/ewamal/wiki-viewer"
 	        },
 		{
 	            "title": "Weather App",
 	            "dates": "November 2016",
 	            "description": "Project done for FreeCodeCamp. Site showing current weather using openweathermap.org API. ",
 	            "images": ["images/weather.png"],
-	            "url" : "https://ewamal.github.io/weather/"
+	            "url" : "https://github.com/ewamal/weather"
 	        } 
 	    ]
 	};
