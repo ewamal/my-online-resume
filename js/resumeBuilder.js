@@ -5,7 +5,7 @@
 	        'mobile': "+48 510 982 367",
 	        'email': "maluseckae@gmail.com",
 	        'github': "ewamal",
-	        'location': "Cracow",
+	        'location': "Dresden, Sachsen",
 	   	},
 	    'welcomeMessege': "Hi, here's my page with some of my projects and few things about me.",
 	    'skills': ["JS", "HTML5", 'CSS3', 'JQUERY', "AJAX"],
