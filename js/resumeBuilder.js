@@ -1,6 +1,6 @@
    	var bio = {
 	    'name': "Ewa Małusecka",
-	    'role': "Front-End  Developer",
+	    'role': "Front-End Developer",
 	    'contacts': {
 	        'mobile': "+48 510 982 367",
 	        'email': "maluseckae@gmail.com",
@@ -8,7 +8,7 @@
 	        'location': "Dresden, Germany",
 	   	},
 	    'welcomeMessege': "Hi, here's my page with some of my projects and few things about me.",
-	    'skills': ["JS", "HTML5", 'CSS3', 'JQUERY', "AJAX"],
+	    'skills': ["JS", "HTML5", 'CSS3', 'JQUERY', "AJAX", "ANGULAR JS"],
 	    'biopic': "images/cvv.png"
 	};
 
@@ -41,11 +41,12 @@
 	var work = {
 	    "jobs": [
 	        {
-	            "employer": "",
-	            "title": "",
+	            "employer": "Deutsche MTM-Gesellschaft Industrie-und Wirtschaftsberatung mbH Software House",
+	            "title": "IT Intern",
 	            "dates": "",
-	            "location": "",
-	            "description": ""
+	            "location": "Dresden",
+	            "description": "",
+	            "url": "https://www.dmtm.com/index.php?lng=14"
 	        }
 	    ]
 	};
@@ -136,10 +137,10 @@
 
 	        $("#education").append(HTMLschoolStart);
 
-	        var formattedOnlineTitle = HTMLonlineTitle.replace("%data%", course.title);
+	        var formattedOnlineTitle = HTMLonlineTitle.replace("%data%", course.title).replace("#", course.url);
 	        var formattedOnlineSchool = HTMLonlineSchool.replace("%data%", course.school);
 	        var formattedOnlineDates = HTMLonlineDates.replace("%data%", course.dates);
-	        var formattedOnlineURL = HTMLonlineURL.replace("%data%", course.url);
+	        var formattedOnlineURL = "<br>"     // HTMLonlineURL.replace("%data%", course.url); 
 
 	        var formattedOnlineTitleAndSchool = formattedOnlineTitle + formattedOnlineSchool;
 
@@ -176,7 +177,7 @@
 	    work.jobs.forEach(function(job) {
 	        $("#workExperience").append(HTMLworkStart);
 
-	        var formattedWorkEmployer = HTMLworkEmployer.replace("%data%", job.employer);
+	        var formattedWorkEmployer = HTMLworkEmployer.replace("%data%", job.employer).replace("#", job.url);
 	        var formattedWorkTitle = HTMLworkTitle.replace("%data%", job.title);
 	        var formattedWorkDates = HTMLworkDates.replace("%data%", job.dates);
 	        var formattedWorkLocation = HTMLworkLocation.replace("%data%", job.location);
