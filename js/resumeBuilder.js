@@ -2,13 +2,13 @@
 	    'name': "Ewa Małusecka",
 	    'role': "Front-End Developer",
 	    'contacts': {
-	        'mobile': "+48 510 982 367",
+	        'mobile': "+48 507 389 173",
 	        'email': "maluseckae@gmail.com",
 	        'github': "ewamal",
 	        'location': "Cracow, Poland",
 	   	},
 	    'welcomeMessege': "Hi, here's my page with some of my projects and few things about me.",
-	    'skills': ["JAVASCRIPT", "HTML5", 'CSS3', 'JQUERY', "AJAX", "ANGULAR JS"],
+	    'skills': ["JAVASCRIPT", "HTML5", 'CSS3', 'JQUERY', "ANGULAR.JS", "REACT", "NODE.JS"],
 	    'biopic': "images/cvv.png"
 	};
 
@@ -22,18 +22,21 @@
 	        'location': "Cracow",
 	        'majors': ["Acustic Engineering"],
 	        'url': "http://www.agh.edu.pl/en"
-	    }],
+	    },
+	    {
+	    	'name': "WSEI College of Economics and Computer Science",
+	        'dates': "2017-",
+	        'degree': "BA",
+	        'location': "Cracow",
+	        'majors': ["Computer Studies"],
+	        'url': "http://en.wsei.edu.pl/"
+	    }
+	    ],
 	    "onlineCourses": [{
 	            "school": "Udacity",
 	            "title": 'Front-End Web Developer Nanodegree',
 	            "dates": "in progress",
 	            "url": "https://www.udacity.com/course/front-end-web-developer-nanodegree--nd001"
-	        },
-	        {
-	            "school": "FreeCodeCamp",
-	            "title": "Front-End Development",
-	            "dates": "in progress",
-	            "url": "https://www.freecodecamp.com/"
 	        }
 	    ]
 	};
@@ -42,37 +45,38 @@
 	    "jobs": [
 	        {
 	            "employer": "Deutsche MTM-Gesellschaft Industrie-und Wirtschaftsberatung mbH Software House",
-	            "title": "IT Intern",
-	            "dates": "",
-	            "location": "Dresden",
-	            "description": "",
+	            "title": "Front-End Developer (internship)",
+	            "dates": "06.-08.2017",
+	            "location": "Dresden, Germany",
+	            "description": "There I got an opportunity to work on my JavaScript, HTML and CSS skills and learn new technologies, like AngularJS, and Node.js. I have worked on company’s real project in a team of experienced developers.",
 	            "url": "https://www.dmtm.com/index.php?lng=14"
 	        }
 	    ]
 	};
 
 	var projects = {
-	    "projects": [{
+	    "projects": [
+	    		{
+	            "title": "Weather app",
+	            "dates": "February 2017",
+	            "description": "Site showing current weather using openweathermap.org API. ",
+	            "images": ["images/weather.png"],
+	            "url" : "https://github.com/ewamal/weather"
+	        }, 
+	    		{
 	            "title": "Random Quote Machine",
 	            "dates": "December 2016",
-	            "description": "Project done for FreeCodeCamp. Page showing random quotes using other pages' API",
+	            "description": "Page showing random quotes using open API",
 	            "images": ["images/randomQuote.png"],
 	            "url" : "https://github.com/ewamal/random-quote-machine"
 	        },
 	        {
-	            "title": "Wikipedia Viewer",
-	            "dates": "January 2017",
-	            "description": "Project done for FreeCodeCamp. Page showing Wikipedia search results using Wikipedia API",
-	            "images": ["images/wikiViewer.png"],
+	            "title": "Comment's app in React",
+	            "dates": "July 2017",
+	            "description": "Simple commenting app in React",
+	            "images": ["images/comments.gif"],
 	            "url" : "https://github.com/ewamal/wiki-viewer"
-	        },
-		{
-	            "title": "Weather App",
-	            "dates": "November 2016",
-	            "description": "Project done for FreeCodeCamp. Site showing current weather using openweathermap.org API. ",
-	            "images": ["images/weather.png"],
-	            "url" : "https://github.com/ewamal/weather"
-	        } 
+	        }
 	    ]
 	};
 
