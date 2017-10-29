@@ -75,7 +75,7 @@
 	            "dates": "July 2017",
 	            "description": "Simple commenting app in React",
 	            "images": ["images/comments.gif"],
-	            "url" : "https://github.com/ewamal/wiki-viewer"
+	            "url" : "https://github.com/ewamal/commentsApp"
 	        }
 	    ]
 	};
