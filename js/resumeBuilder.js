@@ -8,7 +8,7 @@
 	        'location': "Cracow, Poland",
 	   	},
 	    'welcomeMessege': "Hi, here's my page with some of my projects and few things about me.",
-	    'skills': ["JAVASCRIPT", "HTML5", 'CSS3', 'JQUERY', "ANGULAR.JS", "REACT", "NODE.JS"],
+	    'skills': ["JAVASCRIPT", "HTML5", 'CSS3', 'BOOTSTRAP4', 'JQUERY', "REACT", "NODE.JS"],
 	    'biopic': "images/cvv.png"
 	};
 
@@ -18,15 +18,15 @@
 	    "schools": [{
 	        'name': "AGH University of Science and Technology",
 	        'dates': "2014-2016",
-	        'degree': "BA",
+	        'degree': "BE",
 	        'location': "Cracow",
 	        'majors': ["Acustic Engineering"],
 	        'url': "http://www.agh.edu.pl/en"
 	    },
 	    {
 	    	'name': "WSEI College of Economics and Computer Science",
-	        'dates': "2017-",
-	        'degree': "BA",
+	        'dates': "2017-ongoing",
+	        'degree': "BE",
 	        'location': "Cracow",
 	        'majors': ["Computer Studies"],
 	        'url': "http://en.wsei.edu.pl/"
@@ -50,7 +50,15 @@
 	            "location": "Dresden, Germany",
 	            "description": "There I got an opportunity to work on my JavaScript, HTML and CSS skills and learn new technologies, like AngularJS, and Node.js. I have worked on company’s real project in a team of experienced developers.",
 	            "url": "https://www.dmtm.com/index.php?lng=14"
-	        }
+	        },
+		{
+		    "employer": "ESC S.A.",
+	            "title": "Junior Front-End Developer",
+	            "dates": "09.-12.2017",
+	            "location": "Cracow, Poland",
+	            "description": "Worked on production, modification, and maintenance of websites and web application user interfaces using HTML5, Bootstrap4, JavaScript and JQuery",
+	            "url": "https://www.escsa.pl/"
+		}
 	    ]
 	};
 
